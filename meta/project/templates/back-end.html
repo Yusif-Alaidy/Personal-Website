@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/back-end.css' %}">
+    <title>Front-end skills</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="title">
+        <h2>Back-end skills</h2>
+    </div>
+    <section>
+        <div class="left">
+            <h2>What do I do ?</h2>
+            <div class="icone">
+                <div class="img">
+                    <img src="{% static 'img/img1.png' %}" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Python, Django
+                    </h4>
+                    <p>
+                        Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu dává nějaký smysl. Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text vhodnou bezvýznamovou alternativou
+    
+                    </p>
+                </div>
+            </div>
+            <div class="icone">
+                <div class="img">
+                    <img src="{% static 'img/img2.png' %}" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Database
+                    </h4>
+                    <p>
+                        Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu dává nějaký smysl. Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text vhodnou bezvýznamovou alternativou
+    
+                    </p>
+                </div>
+            </div>
+            <div class="icone">
+                <div class="img">
+                    <img src="{% static 'img/img3.png' %}" alt="">
+                </div>
+                <div>
+                    <h4>
+                        Data Structures and Algorithms
+                    </h4>
+                    <p>
+                        Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu dává nějaký smysl. Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text vhodnou bezvýznamovou alternativou
+    
+                    </p>
+                </div>
+            </div>  
+            
+        </div>
+        <div class="right">
+            <h2>Coding skills</h2>
+            <div class="field">
+                <div class="text-line">
+                    <h3>Python & Django</h3>
+                    <p>90%</p>
+                </div>
+                <div class="line"><div class="python"></div></div>
+            </div>
+            <div class="field">
+                <div class="text-line">
+                    <h3>SQL</h3>
+                    <p>60%</p>
+                </div>
+                <div class="line"><div class="sql"></div></div>
+            </div>
+            <div class="field">
+                <div class="text-line">
+                    <h3>Data Structures</h3>
+                    <p>80%</p>
+                </div>
+                <div class="line"><div class="data"></div></div>
+            </div>
+            <div class="field">
+                <div class="text-line">
+                    <h3>Algorithms</h3>
+                    <p>90%</p>
+                </div>
+                <div class="line"><div class="algo"></div></div>
+            </div>
+            <div class="field">
+                <div class="text-line">
+                    <h3>APIs</h3>
+                    <p>90%</p>
+                </div>
+                <div class="line"><div class="api"></div></div>
+            </div>
+        </div>
+    </section>
+{% include 'footer.html' %}
+</body>
+</html>

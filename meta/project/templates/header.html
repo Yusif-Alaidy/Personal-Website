@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Yusif-Alaidy</a>
+        <nav>
+            <a href="{% url 'Home' %}">Home</a>
+            <a href="{% url 'Frontend' %}">Front-end skills</a>
+            <a href="{% url 'Backend' %}">Back-end skills</a>
+            <a href="{% url 'Portfolio' %}">Portfolio</a>
+            <a href="{% url 'Contact' %}">Contact us</a>
+        </nav>
+    </header>
+</body>
+</html>

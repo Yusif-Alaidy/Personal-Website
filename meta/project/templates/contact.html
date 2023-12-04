@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <title>contact</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="title">
+        <h2>Contact</h2>
+    </div>
+    <section>
+        <div class="left">
+            <div class="field">
+                <div class="image">
+                    <img src="{% static 'img/image 18.png' %}" alt="">
+                </div>
+                <div class="text">
+                    <h3>20 1018946077</h3>
+                </div>
+            </div>
+            <div class="field">
+                <div class="image">
+                    <img src="{% static 'img/image 19.png' %}" alt="">
+                </div>
+                <div class="text">
+                    <h3>Egypt Giza</h3>
+                </div>
+            </div>
+            <div class="field">
+                <div class="image">
+                    <img src="{% static 'img/image 20.png' %}" alt="">
+                </div>
+                <div class="text">
+                    <h3>yusiftrull@gmail.com</h3>
+                </div>
+            </div>
+        </div>
+        <h3 class="contact">Contact Me!</h3>
+        <div class="right">
+            <form method="POST" action="{% url 'Home' %}">
+                {% csrf_token %}
+                <div class="form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input class="m" type="text" name="message" placeholder="Message" required>
+                </div>
+            </div>
+            <button type="submit">send</button>
+        </form>
+        <div class="button">
+            <input class="submit" type="submit">
+        </div>
+
+    </section>
+    {% include 'footer.html' %}
+</body>
+</html>

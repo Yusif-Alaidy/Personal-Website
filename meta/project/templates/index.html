@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusif</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    
+    <section>
+        <div class="hero-img">
+            <img  src="{% static 'img/hero-img.png' %}" alt="">
+        </div>
+
+        <div class="hero-text">
+            <h3>Full stack Developer</h3>
+            <h2>Yusif</h2>
+            <p>Do you need to create a website? When creating websites, I ensure the overall design from design to implementation. I also ensure the technical aspect is perfect, so that everything goes exactly as it should. If you are interested in my portfolio or experience - write to me!</p>
+                <div class="hero-buttons">
+                    <a href="{% url 'Portfolio' %}" class="hb">Portfolio</a>
+                    <a href="{% url 'Contact' %}" class="hb">Contact us</a>
+                </div>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+</body>
+</html>
